@@ -19,13 +19,18 @@ class PlanJ : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item?.itemId) {
-            R.id.action_main -> {
+            R.id.plan_j -> {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 return true
             }
-        }
 
+            R.id.percent_menu -> {
+                val intent = Intent(this, percent::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
         return super.onOptionsItemSelected(item)
     }
 }

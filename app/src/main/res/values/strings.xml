@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ToDoApp</string>
-    <string name="plan_j">J형 계회표</string>
+    <string name="plan_j">J형 계획표</string>
     <string name="plan_p">P형 계획표</string>
     <string name="action_main">계획표 다시 선택하기</string>
+    <string name="percent_menu">달성률 확인하기</string>
 </resources>

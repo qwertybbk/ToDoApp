@@ -1,5 +1,6 @@
 package com.example.todoapp
 
+import android.app.TimePickerDialog
 import android.graphics.Color.*
 import android.graphics.Paint
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,12 @@ import androidx.core.graphics.toColorInt
 import kotlinx.android.synthetic.main.activity_plan_j.*
 import kotlin.coroutines.coroutineContext
 import android.util.SparseBooleanArray
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
+import android.widget.Button
+import android.widget.TextView
+
 
 class MainActivity_1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,8 +66,36 @@ class MainActivity_1 : AppCompatActivity() {
             arrayAdapter.notifyDataSetChanged()
         }
     }
+        //********여기부터 시계부분************
+        val mPickTimeBtn = findViewById<Button>(R.id.StartTimeBtn)
+        val ePickTimeBtn = findViewById<Button>(R.id.EndTimeBtn)
+        val starttextView = findViewById<TextView>(R.id.timeStart)
+        val endtextView = findViewById<TextView>(R.id.timeEnd)
 
-}}
+        //시작시간 버튼
+        mPickTimeBtn.setOnClickListener {
+            val cal = Calendar.getInstance()
+            val timeSetListener = TimePickerDialog.OnTimeSetListener { timePicker, hour, minute ->
+                cal.set(Calendar.HOUR_OF_DAY, hour)
+                cal.set(Calendar.MINUTE, minute)
+                starttextView.text = SimpleDateFormat("HH:mm").format(cal.time)
+            }
+            TimePickerDialog(this, timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true).show()
+        }
+
+        //끝나는 시간 버튼
+        ePickTimeBtn.setOnClickListener {
+            val cal = Calendar.getInstance()
+            val timeSetListener = TimePickerDialog.OnTimeSetListener { timePicker, hour, minute ->
+                cal.set(Calendar.HOUR_OF_DAY, hour)
+                cal.set(Calendar.MINUTE, minute)
+                endtextView.text = SimpleDateFormat("HH:mm").format(cal.time)
+            }
+            TimePickerDialog(this, timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), true).show()
+        }
+        //********여기까지 시계부분************
+    }
+}
 
 
 

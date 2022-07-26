@@ -3,8 +3,5 @@
 
     <item
         android:id="@+id/plan_j"
-        android:title="@string/action_main" />
-    <item
-        android:id="@+id/percent_menu"
-        android:title="@string/percent_menu" />
+        android:title="@string/plan_j" />
 </menu>
