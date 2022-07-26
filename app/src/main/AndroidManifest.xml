@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.todoapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,11 +16,19 @@
         android:theme="@style/Theme.ToDoApp"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".PlanP"
+            android:exported="false" />
+        <activity
+            android:name=".PlanJ"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/MeoSplashTheme"
+            android:exported="true"
+            android:screenOrientation="portrait"> <!-- /values/styles.xml 에서 생성, 스플래쉬화면은 가로모드에서 지원이 안됨 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+    <item>
+        <bitmap
+            android:src="@drawable/meosplash1"
+            android:gravity="center"/> <!-- 자신의 만든 로딩 화면 이미지 경로를 넣습니다 -->
+    </item>
+</layer-list>
