@@ -5,21 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity_1">
-
-    <TextView
-        android:id="@+id/textview11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-
+    tools:context=".PlanP">
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="to do list를 작성해주세요"
+        android:inputType="textPersonName" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,32 +20,34 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="추가" />
-
-
-        <Button
-            android:id="@+id/button33"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="삭제" />
+            android:text="추가"
+            app:backgroundTint="#D98787" />
 
         <Button
-            android:id="@+id/button44"
+            android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="초기화" />
+            android:text="삭제"
+            app:backgroundTint="#D98787" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="초기화"
+            app:backgroundTint="#D98787" />
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listview11"
+        android:id="@+id/listview1"
         android:layout_width="match_parent"
-        android:layout_height="342dp" />
+        android:layout_height="380dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
