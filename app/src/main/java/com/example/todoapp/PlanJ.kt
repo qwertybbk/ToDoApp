@@ -24,7 +24,6 @@ class PlanJ : AppCompatActivity() {
                 startActivity(intent)
                 return true
             }
-
             R.id.percent_menu -> {
                 val intent = Intent(this, percent::class.java)
                 startActivity(intent)

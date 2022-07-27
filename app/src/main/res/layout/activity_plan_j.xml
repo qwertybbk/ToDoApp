@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="시작"
+                android:text="하루 시작"
                 android:textColor="#F1BB21"
                 android:textSize="15sp"
                 android:paddingTop="15dp" />
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="하루 시작"
+                android:text="시작 시간"
                 android:textColor="#F1BB21"
                 android:textSize="15sp"
                 android:paddingTop="15dp" />
@@ -98,7 +98,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="종료"
+                android:text="하루 종료"
                 android:textColor="#F1BB21"
                 android:textSize="15sp"
                 android:layout_margin="10dp"
@@ -108,7 +108,7 @@
                 android:id="@+id/timeEnd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="하루 종료"
+                android:text="종료 시간"
                 android:textColor="#F1BB21"
                 android:textSize="15sp"
                 android:layout_margin="10dp"

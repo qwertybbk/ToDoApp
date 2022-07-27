@@ -97,6 +97,12 @@ class percent : AppCompatActivity() {
                     startActivity(intent)
                     return true
                 }
+                R.id.plan_p -> {
+                    val intent = Intent(this, PlanP::class.java)
+                    startActivity(intent)
+                    return true
+                }
+
             }
             return super.onOptionsItemSelected(item)
         }
