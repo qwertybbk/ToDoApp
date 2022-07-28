@@ -76,13 +76,12 @@ class percent : AppCompatActivity() {
         }
 
         // 달성률 화면이랑 연결되는 부분
-        // 제작할때 혹시 몰라서 넣은거라 성은님이 생각하신 연결방식으로 변경하셔도 상관없습니다!
-        // 버튼말고 메뉴등으로 성은님 편하신 방법대로 넣으시면 될것 같습니다!!
-/*      val go_JyPIntent = findViewById(R.id.CheckBtn) as Button
+        val go_JyPIntent = findViewById(R.id.CheckBtn) as Button
         go_JyPIntent.setOnClickListener{
-            val intent = Intent(this, 달성률화면넣으시면 될것같습니다!::class.java)
+            val intent = Intent(this, Achievement::class.java)
+            intent.putExtra("percentKey",result)
             startActivity(intent)
-        }*/
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
