@@ -18,7 +18,7 @@ class Achievement : AppCompatActivity() {
         setContentView(R.layout.activity_achievement)
 
 
-        var achPercent= intent.getIntExtra("percentKey",-1)
+        var achPercent= intent.getDoubleExtra("percentKey",-1.0)
 
 
         resultTextView=findViewById<TextView>(R.id.ach_str) //결과 표시 텍스트의 id
@@ -30,8 +30,8 @@ class Achievement : AppCompatActivity() {
         when{
             achPercent >= 80 -> resultTextView.text = "Perfect"
             achPercent >= 30 -> resultTextView.text = "Good"
-            achPercent > 0 -> resultTextView.text = "Bad"
-            achPercent == -1 -> resultTextView.text = "달성률이 계산되지 않았습니다."
+            achPercent >= 0 -> resultTextView.text = "Bad"
+            achPercent == -1.0 -> resultTextView.text = "달성률이 계산되지 않았습니다."
 
         }
 
