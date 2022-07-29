@@ -79,7 +79,7 @@ class percent : AppCompatActivity() {
         val go_JyPIntent = findViewById(R.id.CheckBtn) as Button
         go_JyPIntent.setOnClickListener{
             val intent = Intent(this, Achievement::class.java)
-            intent.putExtra("achPercent", result)
+            intent.putExtra("percentKey", result)
             startActivity(intent)
         }
     }
