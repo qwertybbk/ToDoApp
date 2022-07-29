@@ -135,12 +135,21 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/CheckBtn"
+        android:id="@+id/jCheckBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="J와P 확인하기"
-        android:textSize="30sp"
-        android:textColor="@color/yellow_theme" />
+        android:backgroundTint="@color/yellow_theme"
+        android:text="J 확인하기"
+        android:textColor="@color/purple_theme"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/pCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P 확인하기"
+        android:textColor="@color/yellow_theme"
+        android:textSize="30sp" />
 
 
 </LinearLayout>

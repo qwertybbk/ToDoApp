@@ -76,12 +76,20 @@ class percent : AppCompatActivity() {
         }
 
         // 달성률 화면이랑 연결되는 부분
-        val go_JyPIntent = findViewById(R.id.CheckBtn) as Button
+        val go_JyPIntent: Button = findViewById(R.id.pCheckBtn) as Button
         go_JyPIntent.setOnClickListener{
-            val intent = Intent(this, Achievement::class.java)
-            intent.putExtra("percentKey", result)
+            val intent = Intent(this, pAchievement::class.java)
+            intent.putExtra("pPercentKey", result)
             startActivity(intent)
         }
+
+        val go_JyPIntent2 : Button = findViewById(R.id.jCheckBtn) as Button
+        go_JyPIntent2.setOnClickListener{
+            val intent = Intent(this, jAchievement::class.java)
+            intent.putExtra("jPercentKey", result)
+            startActivity(intent)
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

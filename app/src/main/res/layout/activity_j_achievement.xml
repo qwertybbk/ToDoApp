@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ach_today"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pAchievement">
+    tools:context=".jAchievement">
 
     <ImageView
-        android:id="@+id/pImage"
+        android:id="@+id/jImage"
         android:layout_width="264dp"
         android:layout_height="388dp"
         android:layout_marginStart="75dp"
@@ -21,7 +20,7 @@
         app:srcCompat="@drawable/ach_default" />
 
     <TextView
-        android:id="@+id/pStr"
+        android:id="@+id/jStr"
         android:layout_width="291dp"
         android:layout_height="39dp"
         android:layout_marginStart="70dp"
@@ -35,12 +34,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/pToday"
+        android:id="@+id/jToday"
         android:layout_width="202dp"
         android:layout_height="40dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="80dp"
-        android:text="오늘의 하루는 ..."
+        android:text="J의 하루는 ..."
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

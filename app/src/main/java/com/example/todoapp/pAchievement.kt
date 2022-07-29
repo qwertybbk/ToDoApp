@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 
-class Achievement : AppCompatActivity() {
+class pAchievement : AppCompatActivity() {
 
     lateinit var resultTextView: TextView
     lateinit var todayTextView: TextView
@@ -18,13 +18,13 @@ class Achievement : AppCompatActivity() {
         setContentView(R.layout.activity_achievement)
 
 
-        var achPercent= intent.getDoubleExtra("percentKey",-1.0)
+        var achPercent= intent.getDoubleExtra("pPercentKey",-1.0)
 
 
-        resultTextView=findViewById<TextView>(R.id.ach_str) //결과 표시 텍스트의 id
-        imageView=findViewById<ImageView>(R.id.ach_image) //결과 표시 이미지의 id
-        todayTextView=findViewById<TextView>(R.id.ach_str) //"오늘의 하루는" 표시 텍스트의 id
-        todayTextView.text = "오늘의 하루는 ..."
+        resultTextView=findViewById<TextView>(R.id.pStr) //결과 표시 텍스트의 id
+        imageView=findViewById<ImageView>(R.id.pImage) //결과 표시 이미지의 id
+        todayTextView=findViewById<TextView>(R.id.pToday) //"오늘의 하루는" 표시 텍스트의 id
+        todayTextView.text = "오늘 P의 하루는 ..."
 
         //글자로 출력
         when{
@@ -38,11 +38,11 @@ class Achievement : AppCompatActivity() {
         //이미지 출력
         when{
             achPercent >= 80 ->
-                imageView.setImageResource(R.drawable.j_perfect)
+                imageView.setImageResource(R.drawable.p_perfect)
             achPercent >= 30 ->
-                imageView.setImageResource(R.drawable.j_good)
+                imageView.setImageResource(R.drawable.p_good)
             achPercent > 0 ->
-                imageView.setImageResource(R.drawable.j_bad)
+                imageView.setImageResource(R.drawable.p_bad)
         }
 
     }
