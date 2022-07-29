@@ -16,6 +16,7 @@
         android:theme="@style/Theme.ToDoApp"
         tools:targetApi="31">
         <activity android:name=".jAchievement"></activity>
+        <activity android:name=".jachievement" />
         <activity
             android:name=".pAchievement"
             android:parentActivityName=".percent" />
