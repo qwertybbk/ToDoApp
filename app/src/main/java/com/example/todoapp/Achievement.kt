@@ -17,7 +17,7 @@ class Achievement : AppCompatActivity() {
         setContentView(R.layout.activity_achievement)
 
 
-        var achPercent= intent.getIntExtra("percentKey",-1)
+        var achPercent= intent.getIntExtra("achPercent",-1)
 
 
         resultTextView=findViewById<TextView>(R.id.ach_str) //결과 표시 텍스트의 id
