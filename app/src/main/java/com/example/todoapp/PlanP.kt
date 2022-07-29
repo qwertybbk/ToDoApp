@@ -2,6 +2,7 @@ package com.example.todoapp
 
 
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.graphics.Color.MAGENTA
 import android.graphics.Color.RED
 import android.graphics.Paint
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.SparseBooleanArray
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.ListView
 import android.widget.*
@@ -70,5 +73,25 @@ class PlanP : AppCompatActivity() {
 
 
     }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_plan_j, menu)
+        return true
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId) {
+            R.id.plan_j -> {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.percent_menu -> {
+                val intent = Intent(this, percent::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
+
