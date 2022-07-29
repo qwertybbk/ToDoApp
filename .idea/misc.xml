@@ -9,10 +9,15 @@
         <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp/app/src/main/res/layout/activity_plan_p.xml" value="0.1983695652173913" />
         <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp/app/src/main/res/menu/menu_plan_j.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp/app/src/main/res/menu/menu_plan_p.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp4/app/src/main/res/layout/activity_main.xml" value="0.3359375" />
+        <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp4/app/src/main/res/layout/activity_percent.xml" value="0.3359375" />
+        <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp4/app/src/main/res/menu/menu_main.xml" value="0.2916666666666667" />
+        <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp4/app/src/main/res/menu/menu_plan_j.xml" value="0.2916666666666667" />
+        <entry key="..\:/Users/Yujin/AndroidStudioProjects/ToDoApp4/app/src/main/res/menu/menu_plan_p.xml" value="0.2916666666666667" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
