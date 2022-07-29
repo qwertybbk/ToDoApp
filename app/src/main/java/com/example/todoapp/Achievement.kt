@@ -28,6 +28,8 @@ class Achievement : AppCompatActivity() {
             achPercent >= 80 -> resultTextView.text = "Perfect"
             achPercent >= 30 -> resultTextView.text = "Good"
             achPercent > 0 -> resultTextView.text = "Bad"
+            achPercent == -1 -> resultTextView.text = "달성률이 계산되지 않았습니다."
+
         }
 
         //이미지 출력
@@ -38,7 +40,6 @@ class Achievement : AppCompatActivity() {
                 imageView.setImageResource(R.drawable.j_good)
             achPercent > 0 ->
                 imageView.setImageResource(R.drawable.j_bad)
-
         }
 
     }
