@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class Achievement : AppCompatActivity() {
 
     lateinit var resultTextView: TextView
+    lateinit var todayTextView: TextView
     lateinit var imageView: ImageView
 
 
@@ -22,6 +23,8 @@ class Achievement : AppCompatActivity() {
 
         resultTextView=findViewById<TextView>(R.id.ach_str) //결과 표시 텍스트의 id
         imageView=findViewById<ImageView>(R.id.ach_image) //결과 표시 이미지의 id
+        todayTextView=findViewById<TextView>(R.id.ach_str) //"오늘의 하루는" 표시 텍스트의 id
+        todayTextView.text = "오늘의 하루는 ..."
 
         //글자로 출력
         when{
