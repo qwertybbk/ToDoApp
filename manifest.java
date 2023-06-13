@@ -24,9 +24,6 @@ public class ProcessResults extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.process_results);
 
-
-
-
 		Bundle appBundle = this.getIntent().getExtras();
 
 		if (appBundle != null) {
@@ -60,8 +57,7 @@ public class ProcessResults extends Activity {
 		return true;
 	}
 
-
-
+	
 	public void showDangerousPermissions(ArrayList<ArrayList<String>> dPLists, String mostFrequentDangerousPermission) {
 		for (int i = 0; i < dPLists.size(); i++) {
 			ArrayList<String> dPList = dPLists.get(i);
@@ -79,7 +75,6 @@ public class ProcessResults extends Activity {
 		layout.addView(view);
 	}
 
-
 	private class backButtonClicker implements OnClickListener {
 		public void onClick(View v) {
 			Intent intent = new Intent(ProcessResults.this, MainActivity.class);
@@ -87,4 +82,3 @@ public class ProcessResults extends Activity {
 		}
 	}
 };
-
